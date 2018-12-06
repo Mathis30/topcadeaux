@@ -1,0 +1,16 @@
+#embed("head")
+<body>
+  <section>
+    <div class="container">
+      #get(body)
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Top Cadeaux</strong> par <a href="https://mathisgarc.in">Mathis Garcin</a>. Créé avec <a href="https://bulma.io">Bulma</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

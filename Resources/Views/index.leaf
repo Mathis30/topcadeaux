@@ -1,0 +1,156 @@
+#set("body") {
+
+<section class="section">
+  <div class="container has-text-centered">
+    <h1 class="title">Top Cadeaux</h1>
+    <h2 class="subtitle">Le classement des meilleures idées cadeaux !</h2>
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        <div class="tile">
+          #for(ageCategory in ageCategories){
+            #if(ageCategory.id == 1){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-primary is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 2){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-danger is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 3){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-primary is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        <div class="tile">
+          #for(ageCategory in ageCategories){
+            #if(ageCategory.id == 4){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-danger is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 5){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-primary is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 6){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-danger is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical">
+        <div class="tile">
+          #for(ageCategory in ageCategories){
+            #if(ageCategory.id == 7){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-primary is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 8){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-danger is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+            #if(ageCategory.id == 9){
+              <div class="tile is-parent is-vertical">
+                <article class="tile is-child notification is-primary">
+                  <p class="title">#(ageCategory.name)</p>
+                  <p class="subtitle">ans</p>
+                  <a href="/category/#(ageCategory.id)" class="button is-primary is-inverted is-outlined is-rounded">
+                    <span class="icon">
+                      <i class="fas fa-gift"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+            }
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+}
+
+#embed("master")
